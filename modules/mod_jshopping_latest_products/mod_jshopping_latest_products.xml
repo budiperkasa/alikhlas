@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+<name>Jshopping last products</name> 
+	<creationDate>18.11.2010</creationDate>
+    <author>MAXXmarketing GmbH</author>
+    <authorEmail>marketing@maxx-marketing.net</authorEmail>
+    <authorUrl>http://www.webdesigner-profi.de</authorUrl>
+    <copyright></copyright>
+    <license>Open Source License, GNU GPL</license>
+    <version>2.5.1</version>
+	<description>Displays last products of shop.</description>
+	<files>
+		<filename module="mod_jshopping_latest_products">mod_jshopping_latest_products.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>element/categories.php</filename>
+	</files>
+    <params addpath="/modules/mod_jshopping_latest_products/element">
+      <param name = "count_products" type = "text" default = "5" label = "Count" description = "The number of products in row"  />     
+      <param name="show_image" type="radio" default="1" label="Show product image" description="Show product image">
+         <option value="0">No</option>
+         <option value="1">Yes</option>
+      </param>
+      <param name="catids" type="categories" multiple="multiple"  default="" label="Categories" description="Categories" >
+        <option value="">All</option>
+      </param>
+    </params>  
+</install>

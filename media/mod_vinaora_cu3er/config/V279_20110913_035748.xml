@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cu3er>
+	<settings>
+		<general slide_panel_width="600" slide_panel_height="380" slide_panel_horizontal_align="left" slide_panel_vertical_align="top" ui_visibility_time="3" />
+		<auto_play>
+			<defaults symbol="circular" time="5" />
+			<tweenIn />
+			<tweenOut />
+			<tweenOver />
+		</auto_play>
+		<prev_button>
+			<defaults round_corners="0, 0, 0, 0" />
+			<tweenIn />
+			<tweenOut />
+			<tweenOver />
+		</prev_button>
+		<prev_symbol>
+			<defaults type="3" />
+			<tweenIn />
+			<tweenOut />
+			<tweenOver />
+		</prev_symbol>
+		<next_button>
+			<defaults round_corners="0, 0, 0, 0" />
+			<tweenIn />
+			<tweenOut />
+			<tweenOver />
+		</next_button>
+		<next_symbol>
+			<defaults type="3" />
+			<tweenIn />
+			<tweenOut />
+			<tweenOver />
+		</next_symbol>
+		<preloader>
+			<defaults symbol="circular" />
+			<tweenIn />
+			<tweenOut />
+		</preloader>
+	</settings>
+	<slides>
+		<slide>
+			<url>/images/stories/Slider/Foto0409_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0410_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0411_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0412_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0413_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0414_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0415_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0416_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0417_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0418_resize.jpg</url>
+		</slide>
+		<slide>
+			<url>/images/stories/Slider/Foto0423_resize.jpg</url>
+		</slide>
+	</slides>
+</cu3er>

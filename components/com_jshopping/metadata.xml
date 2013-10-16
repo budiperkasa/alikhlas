@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <menu>
+        <options var="controller">
+            <option name='Shop' value="category" msg="Main page of shop (list of root categories) or single category" />
+            <option name='Basket' value="cart" msg="Shop basket" />
+            <option name='Search' value="search" msg="Extended product search" />
+            <option name='User' value="user" msg="Registration, Login, Logout, My account, Edit account, Orders" />
+            <option name='Wishlist' value="wishlist" msg="Shop wishlist" />
+            <option name='Products' value="products" msg="List products" />
+            <option name='Manufacturers' value="manufacturer" msg="List or manufacturer" />
+            <option name='Vendors' value="vendor" msg="List or vendor" />
+            <option name='StaticPage' value="content" msg="Static text" />
+        </options>
+    </menu>
+    <state switch="controller">
+        <category>
+            <url>
+                <param name="task" type="list" default="" label="Show" description="Page to show">
+                    <option value="">Main page of shop</option>
+                    <option value="view">Category</option>
+                </param>
+                <param name="category_id" type="text" default="" label="Category ID" description="Category ID" />
+            </url>
+        </category>
+        <user>
+            <url>
+                <param name="task" type="list" default="" label="Show" description="Page to show">
+                    <option value="register">Registration</option>
+                    <option value="login">Login</option>
+                    <option value="logout">Logout</option>
+                    <option value="">My account</option>
+                    <option value="editaccount">Edit account</option>
+                    <option value="orders">Orders</option>
+                </param>
+            </url>
+        </user>
+        <manufacturer>
+            <url>
+                <param name="task" type="list" default="" label="Show" description="Page to show">
+                    <option value="">Manufacturers list</option>
+                    <option value="view">Manufacturer</option>
+                </param>
+                <param name="manufacturer_id" type="text" default="" label="Manufacturer ID" description="Manufacturer ID" />
+            </url>
+        </manufacturer>
+        
+        <products>
+            <url>
+                <param name="task" type="list" default="" label="Show" description="Page to show">
+                    <option value="">All Products</option>
+                    <option value="tophits">Top Hits</option>
+                    <option value="toprating">Top Rating</option>
+                    <option value="label">Label Products</option>
+                    <option value="bestseller">Bestseller</option>
+                    <option value="random">Random</option>
+                    <option value="last">Last Products</option>                    
+                </param>
+                <param name="label_id" type="text" default="" label="Label ID" description="Label ID" />
+            </url>
+        </products>
+        
+        <vendor>
+            <url>
+                <param name="task" type="list" default="" label="Show" description="Page to show">
+                    <option value="">Vendors list</option>
+                    <option value="info">Vendor info</option>                    
+                </param>
+                <param name="vendor_id" type="text" default="" label="Vendor ID" description="Vendor ID" />
+            </url>
+        </vendor>
+        
+        <content>
+            <url>
+                <param name="task" type="hidden" default="view" label="task" description="task" />
+                <param name="page" type="list" default="" label="Page" description="Page">
+                    <option value="agb">Terms of Service</option>
+                    <option value="return_policy">Return policy</option>
+                    <option value="shipping">Shipping</option>
+                </param>
+            </url>
+        </content>
+        
+    </state> 
+</metadata>
