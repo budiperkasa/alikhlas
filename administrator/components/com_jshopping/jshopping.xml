@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+   <name>jshopping</name>
+   <creationDate>09.09.2011</creationDate>
+   <author>MAXXmarketing GmbH</author>
+   <authorEmail>marketing@maxx-marketing.net</authorEmail>
+   <authorUrl>http://www.webdesigner-profi.de</authorUrl>
+   <copyright></copyright>
+   <license>Open Source License, GNU GPL</license>
+   <version>2.9.7</version>
+   <description>Joomshopping - shop component. Note: JoomShopping code files are named as jshopping</description>
+   
+   <installfile>install/install.php</installfile>
+   <uninstallfile>install/uninstall.php</uninstallfile>
+   
+   <files folder="site">
+		<folder>controllers</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+        <folder>css</folder>
+		<folder>lang</folder>
+		<folder>lib</folder>
+		<folder>log</folder>
+		<folder>models</folder>
+		<folder>payments</folder>
+		<folder>tables</folder>		
+        <folder>views</folder>
+		<folder>templates</folder>
+        <folder>files</folder>
+		<filename>jshopping.php</filename>
+		<filename>loadparams.php</filename>
+		<filename>router.php</filename>
+        <filename>metadata.xml</filename>
+    </files>
+    
+   <install>
+      <sql>
+         <file charset="utf8" driver="mysql">install/install.sql</file>
+         <file driver="mysql">install/install.sql</file>
+      </sql>
+   </install>
+   
+   <uninstall>
+      <sql>
+         <file charset="utf8" driver="mysql">install/uninstall.sql</file>
+         <file driver="mysql">install/uninstall.sql</file>
+      </sql>
+   </uninstall>   
+   
+   <administration>        
+		
+		<menu img="components/com_jshopping/images/jshop_logo_s.png">JoomShopping</menu>
+	    <submenu>
+	      <menu link="option=com_jshopping&amp;controller=categories&amp;catid=0" img="components/com_jshopping/images/jshop_categories_s.png">Categories</menu>
+	      <menu link="option=com_jshopping&amp;controller=products&amp;category_id=0" img="components/com_jshopping/images/jshop_products_s.png">Products</menu>
+	      <menu link="option=com_jshopping&amp;controller=orders" img="components/com_jshopping/images/jshop_orders_s.png">Orders</menu>
+	      <menu link="option=com_jshopping&amp;controller=users" img="components/com_jshopping/images/jshop_users_s.png">Clients</menu>
+	      <menu link="option=com_jshopping&amp;controller=other" img="components/com_jshopping/images/jshop_options_s.png">Options</menu>
+	      <menu link="option=com_jshopping&amp;controller=config" img="components/com_jshopping/images/jshop_configuration_s.png">Configuration</menu>
+          <menu link="option=com_jshopping&amp;controller=update" img="components/com_jshopping/images/jshop_update_s.png">Install and Update</menu>
+	      <menu link="option=com_jshopping&amp;controller=info" img="components/com_jshopping/images/jshop_info_s.png">About as</menu>
+	    </submenu>
+		
+      <files folder="admin">
+      	<folder>controllers</folder>
+      	<folder>css</folder>
+      	<folder>images</folder>
+      	<folder>js</folder>
+      	<folder>lang</folder>
+      	<folder>models</folder>
+      	<folder>views</folder>
+        <folder>install</folder>
+        <folder>importexport</folder>
+      	<folder>help</folder>
+        <filename>admin.jshopping.php</filename>
+        <filename>functions.php</filename>
+      </files> 
+	       
+   </administration>
+</install>
